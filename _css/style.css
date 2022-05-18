@@ -1,0 +1,306 @@
+/*
+ *
+ * Global
+ *
+ * The rules below control the sitewite appearance
+ * of broad-scope elements, including the body tag and
+ * content wrappers.
+ *
+ */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: rgb(245, 245, 245);
+    color: rgb(44, 44, 44);
+
+}
+
+section {
+
+    width: 100%;
+    min-height: 75vh;
+    background-color: white;
+    
+
+}
+
+.content-wrapper {
+
+    min-height: 80vh;
+    display: block;
+
+}
+
+/*
+ *
+ * Global Abstracts
+ *
+ * The rules below are abstracts that are not
+ * applied to specific elements, but used by any needing
+ * its function, ie. horizontal centering
+ *
+ */
+
+ .txt-center {
+
+    text-align: center;
+    text-indent: 0px;
+
+ }
+
+/*
+ *
+ * Global Navigation & Header
+ *
+ * The rules below control the sitewite appearance
+ * of navigational tools and top header
+ *
+ */
+
+header {
+
+    min-height: 150px;
+
+}
+
+#logo {
+
+    width: 100px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 25%);
+
+}
+
+.openBtn {
+
+    position: fixed;
+
+}
+
+.closeBtn {
+
+    color: white;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    font-size: 30px;
+
+}
+
+.overlay-content {
+
+    background: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    position: fixed;
+    height: 100vh;
+    top: 0%;
+    width: 0%;
+    transition:0.3s;
+    text-align: center;
+    z-index: 2;
+
+}
+
+.overlay-content a {
+
+    display: block;
+    padding: 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+
+}
+
+nav {
+
+}
+
+nav ul  {
+
+    display: none;
+
+}
+
+nav ul li {
+
+}
+
+nav ul a {
+
+}
+
+nav ul a:hover {
+
+}
+
+/*
+ *
+ * Global Content
+ *
+ * Rules in this section control content-specific
+ * styling, including carousel slider and text sizing
+ *
+ */
+
+h1 {
+    
+    font-size: 1.7em;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+h2 {
+    
+    font-size: 1.2em;
+    text-align: center;
+    padding: 25px;
+
+}
+
+p {
+
+    padding: 0px 25px 25px 25px;
+    text-indent: 2em;
+    font-size: 0.8em;
+
+}
+
+.tagline {
+
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left:50%;
+    font-size: 2.5em;
+    z-index: 1;
+
+}
+
+.service-icon {
+
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-bottom: 50px;
+
+}
+
+/*
+ *
+ * Global Footer
+ *
+ * The rules below control sitewite appearance
+ * of the footer element and related items
+ *
+ */
+
+footer {
+
+    bottom: 0px;
+    min-height: 100px;
+    line-height: 1.5em;
+    width: 100%;
+    text-align: center;
+
+ }
+
+ .fa {
+
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 10px 20px 10px;
+
+ }
+
+ .fa-twitter {
+
+    background: #55ACEE;
+    color: white;
+
+ }
+ .fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-envelope {
+    background: black;
+    color: #FFF;
+}
+
+@media only screen and (min-width: 768px) {
+    /*
+     *
+     * Desktop Styling
+     *
+     */
+
+    #logo {
+    
+    padding: 25px;
+    left: 0%;
+    transform: translate(0%, 0%);
+    
+    }
+    
+    nav {
+    
+        width: 100%;
+        display: block;
+        padding-top: 60px;
+    
+    }
+    
+    nav ul  {
+    
+        list-style: none;
+        float: right;
+        display: block;
+    
+    }
+    
+    nav ul li {
+    
+        display: inline;
+        padding: 0px 50px;
+    
+    }
+    
+    nav ul a {
+    
+        text-decoration: none;
+        color: rgb(44, 44, 44);
+    
+    }
+    
+    nav ul a:hover {
+    
+        color: gray;
+    
+    }
+
+    .openBtn {
+
+        display: none;
+
+    }
+
+    .overlay-content {
+
+        display: none;
+
+    }
+
+    .closeBtn {
+
+        display: none;
+
+    }
+
+
+}
